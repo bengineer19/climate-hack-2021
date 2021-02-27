@@ -3,6 +3,7 @@
     <div class="text-h4" id="project-title">Active projects</div>
     <div v-for="project in projects" :key="project.name">
       <ProjectCard :project="project" />
+      <br />
     </div>
   </div>
 </template>

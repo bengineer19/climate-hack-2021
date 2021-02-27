@@ -29,7 +29,14 @@ export default {
       projects: [
         {
           name: "Agroforestry trial",
-          started: "14/11/2020"
+          started: "14th Nov 2020",
+          completed: 5,
+          verification: "4th March 2021"
+        },
+        {
+          name: "Large project",
+          started: "29th Jan 2021",
+          completed: 2
         }
       ]
     }

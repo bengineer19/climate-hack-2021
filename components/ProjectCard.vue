@@ -7,19 +7,22 @@
   </v-card> -->
   <v-stepper alt-labels>
     <v-card-title>{{ project.name }}</v-card-title>
+    <v-card-subtitle>Started {{ project.started }}</v-card-subtitle>
 
     <v-card-text>
-      Verification: 23rd April 2021
+      <v-alert text v-if="project.verification" type="info">
+        Upcoming verification: {{ project.verification }}
+      </v-alert>
     </v-card-text>
 
     <v-stepper-header>
-      <v-stepper-step step="1" complete>
+      <v-stepper-step step="1" :complete="project.completed >= 1">
         Applied
       </v-stepper-step>
 
       <v-divider></v-divider>
 
-      <v-stepper-step step="2" complete>
+      <v-stepper-step step="2" :complete="project.completed >= 2">
         Approved
       </v-stepper-step>
 
@@ -31,19 +34,19 @@
 
       <v-divider></v-divider>
 
-      <v-stepper-step step="4">
+      <v-stepper-step step="3" :complete="project.completed >= 3">
         Contract received
       </v-stepper-step>
 
       <v-divider></v-divider>
 
-      <v-stepper-step step="5">
+      <v-stepper-step step="4" :complete="project.completed >= 4">
         Payment sent
       </v-stepper-step>
 
       <v-divider></v-divider>
 
-      <v-stepper-step step="6">
+      <v-stepper-step step="5" :complete="project.completed >= 5">
         Training received
       </v-stepper-step>
     </v-stepper-header>
