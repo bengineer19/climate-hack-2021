@@ -11,7 +11,7 @@
 
     <v-card-text>
       <v-alert text v-if="project.verification" type="info">
-        Upcoming verification: {{ project.verification }}
+        Upcoming CO2 verification: {{ project.verification }}
       </v-alert>
     </v-card-text>
 

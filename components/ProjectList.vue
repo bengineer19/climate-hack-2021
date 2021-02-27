@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-h4" id="project-title">Active projects</div>
+    <div class="text-h4" id="project-title">{{ title }}</div>
     <div v-for="project in projects" :key="project.name">
       <ProjectCard :project="project" />
       <br />
@@ -10,7 +10,12 @@
 
 <script>
 export default {
-  props: ["projects"]
+  props: {
+    projects: Array,
+    title: {
+      default: "Projects"
+    }
+  }
 };
 </script>
 

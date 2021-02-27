@@ -19,7 +19,7 @@
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
         /> -->
-        <v-toolbar-title>Team name pending</v-toolbar-title>
+        <v-toolbar-title>Syntropic</v-toolbar-title>
       </div>
 
       <v-spacer></v-spacer>
@@ -113,9 +113,9 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer> -->
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; Team name {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <!-- <v-footer :absolute="!fixed" app>
+      <span>&copy; Syntropic {{ new Date().getFullYear() }}</span>
+    </v-footer> -->
   </v-app>
 </template>
 
