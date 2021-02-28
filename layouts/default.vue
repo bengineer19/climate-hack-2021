@@ -24,10 +24,10 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn href="https://github.com/" target="_blank" text>
+      <!-- <v-btn href="https://github.com/" target="_blank" text>
         <span class="mr-2">Code</span>
         <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
     <v-main>
       <v-container fluid>

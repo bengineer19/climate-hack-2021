@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-container fluid id="main-cont">
+      <div class="text-h3" id="comm-header">Agroforestry farmers near you</div>
       <v-layout row wrap>
         <v-row wrap>
           <v-col
@@ -38,5 +39,8 @@ export default {
 <style scoped>
 #main-cont {
   margin: 0;
+}
+#comm-header {
+  margin-bottom: 20px;
 }
 </style>

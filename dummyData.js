@@ -1,9 +1,9 @@
 export default {
-  farmerName: "Markus Sudhoff",
+  farmerName: "Antonio Gomides",
   subtitle: "Member since March 2020",
   tel: "06837644869",
   color: "amber darken-2",
-  photo: "alexandre",
+  photo: "antonio",
   coord: {
     lat: -23.121037,
     long: -46.196555
@@ -18,16 +18,16 @@ export default {
     ],
     ongoing: [
       {
-        name: "Agroforestry trial",
-        started: "14th Apr 2020",
-        completed: 5,
-        verification: "4th March 2021"
-      },
-      {
         name: "Small Agroforestry land conversion",
         started: "18th Nov 2020",
         completed: 5
         // verification: "25th July 2022"
+      },
+      {
+        name: "Agroforestry trial",
+        started: "14th Apr 2020",
+        completed: 5,
+        verification: "4th March 2021"
       }
     ]
   }
@@ -38,7 +38,7 @@ export const community = [
     farmerName: "Carlos	Ferreira",
     subtitle: "Member since Apr 2020",
     tel: "07927463375",
-    projects: [{}],
+    projects: { new: [], ongoing: [] },
     color: "blue",
     photo: "Jonnas",
     coord: {
@@ -50,7 +50,7 @@ export const community = [
     farmerName: "Juliana Dias",
     subtitle: "Member since Sept 2020",
     tel: "09968576668",
-    projects: [{}, {}, {}],
+    projects: { new: [{}, {}, {}], ongoing: [] },
     color: "green",
     photo: "Juliana",
     coord: {
@@ -62,7 +62,7 @@ export const community = [
     farmerName: "Nicolas Lacerda Medina",
     subtitle: "Member since Dec 2020",
     tel: "02583347596",
-    projects: [],
+    projects: { new: [{}], ongoing: [] },
     color: "deep-orange",
     photo: "anna",
     coord: {

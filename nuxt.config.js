@@ -7,8 +7,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - climate-hack-nuxt-2021",
-    title: "climate-hack-nuxt-2021",
+    titleTemplate: "Syntropic | %s",
+    title: "Syntropic",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },

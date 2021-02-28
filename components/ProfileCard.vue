@@ -15,7 +15,13 @@
 
     <v-card-text>
       <div class="profile-text">
-        <div>Projects: {{ farmer.projects.length }}</div>
+        <div>
+          <strong>Projects:</strong>
+          {{ farmer.projects.new.concat(farmer.projects.ongoing).length }}
+        </div>
+      </div>
+      <div class="profile-text">
+        <div><strong>Tel no:</strong> {{ farmer.tel }}</div>
       </div>
     </v-card-text>
 
@@ -47,5 +53,7 @@ export default {
 
 .profile-text {
   color: white;
+  font-size: 1.1em;
+  padding-bottom: 10px;
 }
 </style>

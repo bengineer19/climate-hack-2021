@@ -21,15 +21,18 @@
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
         /> -->
-        <v-toolbar-title>Syntropic | Farmer Area</v-toolbar-title>
+        <v-toolbar-title
+          ><NuxtLink to="/" id="home-link">Syntropic</NuxtLink> | Farmer
+          Area</v-toolbar-title
+        >
       </div>
 
       <v-spacer></v-spacer>
 
-      <v-btn href="https://github.com/" target="_blank" text>
+      <!-- <v-btn href="https://github.com/" target="_blank" text>
         <span class="mr-2">Code</span>
         <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
     <!-- <v-main>
       <v-container fluid>
@@ -59,10 +62,11 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      <v-divider></v-divider>
+
+      <!-- <v-divider></v-divider> -->
 
       <!-- Exceptions -->
-      <v-list>
+      <!-- <v-list>
         <v-list-item to="/apply">
           <v-list-item-action>
             <v-icon>mdi-pencil</v-icon>
@@ -71,9 +75,9 @@
             <v-list-item-title>Apply</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-      </v-list>
+      </v-list> -->
 
-      <v-divider></v-divider>
+      <!-- <v-divider></v-divider>
 
       <v-list>
         <v-list-item to="/account">
@@ -84,7 +88,7 @@
             <v-list-item-title>Account</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-      </v-list>
+      </v-list> -->
     </v-navigation-drawer>
 
     <!-- <v-app-bar :clipped-left="clipped" fixed app>
@@ -161,6 +165,16 @@ export default {
       rightDrawer: false,
       title: "Vuetify.js"
     };
+  },
+  head: {
+    title: "Farmer area"
   }
 };
 </script>
+
+<style scoped>
+#home-link {
+  text-decoration: none;
+  color: inherit;
+}
+</style>

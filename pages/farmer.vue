@@ -8,7 +8,7 @@
           </v-col>
           <v-col sm="12" md="8" lg="9">
             <ProjectList
-              :projects="farmer.projects.new.concat(farmer.projects.ongoing)"
+              :projects="farmer.projects.new.concat(farmer.projects.ongoing[1])"
             />
           </v-col>
         </v-row>
