@@ -8,12 +8,16 @@
         upfront capital and knowledge they need to convert their land to more
         productive agricultural practices.
       </div>
-      <div class="text-subtitle-1" id="intro">
+
+      <div class="text-h4">What makes us different</div>
+      <div class="text-body-1" id="different">
+        <!-- <v-sheet rounded> -->
         In the process of lifting communities out of poverty, CO2 is
         sequestered. Farmers are incentivised to let trees to last for
         generations due to the food and sustainable income produced by
         agroforestry. This means the CO2 offsets produced are uniquely high
         quality.
+        <!-- </v-sheet> -->
       </div>
 
       <v-card
@@ -21,6 +25,7 @@
         max-width="800"
         color="light-blue lighten-3"
         shaped
+        flat
       >
         <v-card-title>About our founder</v-card-title>
 
@@ -53,6 +58,7 @@
         max-width="800"
         color="light-blue lighten-3"
         shaped
+        flat
       >
         <v-card-title>Our approach</v-card-title>
 
@@ -103,6 +109,11 @@ export default {
 <style scoped>
 #intro {
   font-size: 1.3rem !important;
+  max-width: 700px;
+  margin: 20px auto;
+}
+#different {
+  font-size: 1.05rem !important;
   max-width: 700px;
   margin: 20px auto;
 }
